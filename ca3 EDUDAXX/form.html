@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join EDUDAXX</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('EDU DAXX e-learning webpage logo with realistic graphics.png'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        
+        .form-container {
+            background-color: #0f0f2d;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+        
+        .form-container:hover {
+            transform: scale(1.02);
+        }
+        
+        .form-container h2 {
+            color: #00cc52;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            animation: slideIn 1s ease-in-out;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #00cc52;
+            transition: color 0.3s;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #00cc52;
+            border-radius: 10px;
+            font-size: 1rem;
+            background-color: rgba(26, 26, 46, 0.8); /* Semi-transparent */
+            color: #fff;
+            transition: border 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #00cc52;
+            box-shadow: 0 0 8px rgba(0, 204, 82, 0.5);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .btn-submit {
+            background-color: #00cc52;
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            margin-top: 15px;
+            animation: bounceIn 1.2s ease;
+        }
+        
+        .btn-submit:hover {
+            background-color: #009944;
+            transform: translateY(-3px);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes bounceIn {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Join EDUDAXX Today</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Street, City, State, Postal Code" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="education">Educational Background:</label>
+            <input type="text" id="education" name="education" placeholder="e.g., BTech in Computer Science" required>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <optgroup label="Technical Courses">
+                    <option value="Data Science">Data Science</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Business Analytics">Business Analytics</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Cloud Computing">Cloud Computing with AWS</option>
+                    <option value="Cybersecurity">Cybersecurity Essentials</option>
+                    <option value="Blockchain">Blockchain Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="DevOps">DevOps Fundamentals</option>
+                </optgroup>
+                <optgroup label="Non-Technical Courses">
+                    <option value="Creative Writing">Creative Writing</option>
+                    <option value="Public Speaking">Public Speaking</option>
+                    <option value="Photography">Photography Basics</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Personal Development">Personal Development</option>
+                    <option value="Mindfulness">Mindfulness & Meditation</option>
+                    <option value="Business Communication">Business Communication</option>
+                    <option value="Time Management">Time Management</option>
+                    <option value="Financial Literacy">Financial Literacy</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="goals">Why do you want to join this course?</label>
+            <textarea id="goals" name="goals" placeholder="Tell us your goals..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Preferred Start Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="consent" required>
+                I agree to the terms and conditions
+            </label>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

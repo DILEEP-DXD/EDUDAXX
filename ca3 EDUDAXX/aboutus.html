@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About EDUDAXX</title>
+    <style>
+                header {
+                    width: 100%;
+                    background: #0f0f2d;
+                    color: #f4f4f9;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                }
+                
+                header h1 {
+                    font-size: 1.8rem;
+                    color: #00ff66;
+                    margin-right: auto;
+                    padding-left: 20px;
+                }
+                
+                header nav ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 15px;
+                }
+                
+                header nav ul li {
+                    display: inline;
+                }
+                
+            
+                header nav ul li a {
+            display: inline-block;
+            background-color: #00ff66;
+            color: #0f0f2d;
+            padding: 8px 15px;
+            font-size:  12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 255, 102, 0.3);
+            margin: 0 8px;
+        }
+                
+        header nav ul li a:hover {
+            background-color: #00cc52;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px rgba(0, 255, 102, 0.4);
+        }
+
+        header nav ul li a:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 255, 102, 0.4);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #f4f4f9 0%, #e0e0f0 100%);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .content {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        img {
+            width: 30%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn {
+            background-color: #00ff66;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .btn:hover {
+            background-color: #00ff66;
+            transform: translateY(-2px);
+        }
+        
+        #testimonials {
+            background-color: #e0e0f0;
+            padding: 50px 20px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #0f0f2d;
+            color: #f4f4f9;
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+            gap: 10px;
+            text-align: left;
+        }
+        
+        .footer-column {
+            max-width: 200px;
+        }
+        
+        .footer-column h4 {
+            color: #00ff66;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .footer-column ul li a {
+            font-size: 0.85rem;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 8px;
+            font-size: 0.7rem;
+            color: #888;
+            margin-top: 10px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .social-links a {
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            filter: grayscale(100%);
+            transition: transform 0.3s, filter 0.3s;
+        }
+        
+        .social-links a img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .social-links a:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+      <header>
+    <h1>EDU DAXX</h1>
+    <nav>
+      <ul>
+        <li><a href="EDUDAXX.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="ourmentors.html>">Our Mentors</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="container">
+    <div class="content">
+        <h2>About EDUDAXX</h2>
+        <img src="EDU DAXX e-learning webpage logo with realistic graphics.png" alt="EDUDAXX Learning Platform">
+        <p>EDUDAXX is an e-learning platform founded by Dileep Kumar, currently pursuing a BTech at LPU Punjab. We offer a wide variety of technical and non-technical courses designed to help students enhance their skills, learn at their own pace, and achieve their professional goals.</p>
+        <p>Our courses cover diverse fields such as Data Science, Web Development, Creative Writing, Business Analytics, and much more. At EDUDAXX, we believe that learning should be accessible to everyone, anytime, anywhere.</p>
+        <a href="form.html" class="btn">Join Us Today</a>
+    </div>
+</div>
+
+<section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <p>"EDUDAXX transformed my career! The Data Science course was top-notch and helped me secure a new job."</p>
+            <h4>- Alex Johnson</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"The Creative Writing course reignited my passion for storytelling. The instructors were amazing!"</p>
+            <h4>- Sarah Williams</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"Learning at my own pace was a game-changer. I highly recommend the Web Development Bootcamp!"</p>
+            <h4>- Michael Lee</h4>
+        </div>
+    </div>
+    <a href="testimonials.html" class="btn">For more testimonials, click here</a>
+</section>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>About EDUDAXX</h4>
+        <p>EDUDAXX offers a comprehensive e-learning platform for individuals to gain new skills in both technical and non-technical fields, anytime, anywhere.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>Email: support@edudaxx.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: LPU, Punjab, India</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><img src="fb logo 3.png" alt="Facebook"></a>
+          <a href="#"><img src="x logo.jpg" alt="Twitter"></a>
+          <a href="#"><img src="ig logo 2.png" alt="Instagram"></a>
+          <a href="#"><img src="linkedin logo.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 EDUDAXX. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

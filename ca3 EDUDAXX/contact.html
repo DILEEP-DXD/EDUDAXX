@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUDAXX Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            background: #0f0f2d;
+            color: #f4f4f9;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+            color: #00ff66;
+            margin-right: auto;
+            padding-left: 20px;
+        }
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        header nav ul li {
+            display: inline;
+        }
+        
+       
+        header nav ul li a {
+        display: inline-block;
+        background-color: #00ff66;
+        color: #0f0f2d;
+        padding: 8px 15px;
+        font-size:  12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 255, 102, 0.3);
+        margin: 0 8px;
+}
+        
+header nav ul li a:hover {
+    background-color: #00cc52;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 255, 102, 0.4);
+}
+
+header nav ul li a:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 255, 102, 0.4);
+}
+        
+        .contact-container {
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .contact-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #00ff66;
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .contact-info div {
+            margin: 10px;
+            color: #666;
+            text-align: center;
+        }
+
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #00ff66;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #00ff66;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #33ff99;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #0f0f2d;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 3px solid #00ff66;
+        }
+
+        .footer-column h4 {
+            color: #00ff66;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 8px rgba(0, 255, 102, 0.4);
+        }
+
+        /* Footer Bottom Section */
+        .footer-bottom {
+            border-top: 1px solid #333;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EDUDAXX</h1>
+        <nav>
+            <ul>
+                <li><a href="EDUDAXX.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="ourmentors.html">Our Mentors</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>Have questions or need help? Reach out to us, and we'll get back to you as soon as possible!</p>
+        </div>
+
+        <div class="contact-info">
+            <div><strong>Email:</strong> support@edudaxx.com</div>
+            <div><strong>Phone:</strong> +1 234 567 890</div>
+            <div><strong>Address:</strong> LPU, Punjab, India</div>
+        </div>
+
+        <div class="contact-form">
+            <form action="submit_contact_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-column">
+            <h4>About EDUDAXX</h4>
+            <p>EDUDAXX offers a comprehensive e-learning platform for individuals to gain new skills in both technical and non-technical fields, anytime, anywhere.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: support@edudaxx.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: LPU, Punjab, India</p>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#"><img src="fb logo 3.png" alt="Facebook"></a>
+                <a href="#"><img src="x logo.jpg" alt="Twitter"></a>
+                <a href="#"><img src="ig logo 2.png" alt="Instagram"></a>
+                <a href="#"><img src="linkedin logo.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EDUDAXX. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

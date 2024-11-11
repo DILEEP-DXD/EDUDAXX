@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Mentors | EDUDAXX</title>
+ <style>
+    
+header {
+    background-color: #0f0f2d;
+    color: #ffffff;
+    padding: 0.5rem;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+header h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: #00ff66;
+    text-transform: uppercase;
+    letter-spacing: 2.9px;
+    animation: slideDown 1s ease-in-out;
+}
+
+header nav ul li a {
+    display: inline-block;
+    background-color: #00ff66;
+    color: #0f0f2d;
+    padding: 10px 16px;
+    font-size:  12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 255, 102, 0.3);
+    margin: 0 8px;
+}
+
+header nav ul li a:hover {
+    background-color: #00cc52;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 255, 102, 0.4);
+}
+
+header nav ul li a:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 255, 102, 0.4);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(180deg, #f4f4f9 0%, #e0e0f0 100%);
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .content {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+      #mentors {
+        padding: 40px;
+        text-align: center;
+      }
+      
+      #mentors h2 {
+        font-size: 2em;
+        color: #003366;
+        margin-bottom: 20px;
+      }
+      
+      .mentor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      
+      .mentor-card {
+        background: #ffffff;
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+      
+      .mentor-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      
+      .mentor-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+      
+      .mentor-card h3 {
+        font-size: 1.4em;
+        color: #003366;
+        margin-bottom: 5px;
+      }
+      
+      .mentor-card p {
+        color: #666666;
+        font-size: 1em;
+      }
+      
+      .mentor-bio {
+        display: none;
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #555555;
+        line-height: 1.4;
+      }
+      
+    
+        
+    footer {
+        background-color: #0f0f2d;
+        color: #f4f4f9;
+        padding: 20px 15px;
+        text-align: center;
+        box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+        gap: 10px;
+        text-align: left;
+    }
+    
+    .footer-column {
+        max-width: 200px; 
+    }
+    
+    .footer-column h4 {
+        color: #00cc52;
+        font-size: 1rem;
+        margin-bottom: 5px; 
+    }
+    
+    .footer-column ul li a {
+        font-size: 0.85rem; 
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #444;
+        padding-top: 8px;
+        font-size: 0.7rem;
+        color: #888;
+        margin-top: 10px;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px;
+    }
+    
+    .social-links a {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        filter: grayscale(100%);
+        transition: transform 0.3s, filter 0.3s;
+    }
+    
+    .social-links a img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .social-links a:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
+    
+    
+      
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+        }
+      
+        nav ul li {
+          margin: 10px 0;
+        }
+      
+        .mentor-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+ </style>
+ <script>
+    function toggleBio(id) {
+        const bio = document.getElementById(id);
+        bio.style.display = bio.style.display === 'none' || bio.style.display === '' ? 'block' : 'none';
+      }
+      
+ </script>
+
+</head>
+<body>
+    <header>
+        <h1>EDU DAXX</h1>
+        <nav>
+            <ul>
+                <li><a href="EDUDAXX.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="ourmentors.html>">Our Mentors</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mentors">
+        <h2>Meet Our Mentors</h2>
+        <div class="mentor-grid">
+            <div class="mentor-card">
+               
+                <h3>john doe</h3>
+                <p>Web Development</p>
+                <div class="mentor-bio">john doe has over 10 years of experience in web technologies and has taught hundreds of students.</div>
+            </div>
+            <div class="mentor-card">
+               
+                <h3>Dr. Meera Subramanian</h3>
+                <p>Data Science & Analytics</p>
+                <div class="mentor-bio">Dr. Meera specializes in machine learning and data analysis, helping students excel in their careers.</div>
+            </div>
+            <div class="mentor-card">
+               
+                <h3>Mr. Rajesh Reddy</h3>
+                <p>Cloud Computing</p>
+                <div class="mentor-bio">Mr. Rajesh is a cloud architect with extensive experience in deploying scalable cloud solutions.</div>
+            </div>
+            <div class="mentor-card">
+              
+                <h3>lee dong chen</h3>
+                <p>AI & Machine Learning</p>
+                <div class="mentor-bio">lee has worked on various AI projects and brings real-world experience to her teaching.</div>
+            </div>
+            <div class="mentor-card">
+                
+                <h3>Mr. Raghavendra Sharma</h3>
+                <p>Cybersecurity</p>
+                <div class="mentor-bio">Raghavendra has a rich background in cybersecurity and educates students on best practices.</div>
+            </div>
+            <div class="mentor-card">
+               
+                <h3>Ms. Aditi Ramesh</h3>
+                <p>Blockchain Development</p>
+                <div class="mentor-bio">Aditi is an expert in blockchain technology and has helped many startups implement blockchain solutions.</div>
+            </div>
+            <div class="mentor-card">
+               
+                <h3>Dr. Priya Choudhury</h3>
+                <p>Mobile App Development</p>
+                <div class="mentor-bio">Dr. Priya has developed numerous mobile applications and guides students through the entire development process.</div>
+            </div>
+            <div class="mentor-card">
+              
+                <h3>subhash Iyer</h3>
+                <p>DevOps Fundamentals</p>
+                <div class="mentor-bio">subhash has extensive experience in DevOps practices, focusing on continuous integration and delivery.</div>
+            </div>
+            <div class="mentor-card">
+               
+                <h3>Ms. Sita Venkat</h3>
+                <p>Creative Writing</p>
+                <div class="mentor-bio">Sita is an accomplished writer and teaches creative writing techniques to aspiring authors.</div>
+            </div>
+            <div class="mentor-card">
+               
+                <h3>Mr. Arjun Nandakumar</h3>
+                <p>Digital Marketing</p>
+                <div class="mentor-bio">Arjun specializes in digital marketing strategies and helps students build their online presence.</div>
+            </div>
+            <div class="mentor-card">
+                
+                <h3>Ms. Kavitha Iyer</h3>
+                <p>Photography Basics</p>
+                <div class="mentor-bio">Kavitha is a professional photographer and teaches the essentials of capturing stunning images.</div>
+            </div>
+            <div class="mentor-card">
+                
+                <h3>Mr. Hari Prasad</h3>
+                <p>Mindfulness & Meditation</p>
+                <div class="mentor-bio">Hari is a wellness coach who teaches mindfulness techniques to enhance mental well-being.</div>
+            </div>
+            <div class="mentor-card">
+             
+                <h3>Ms. Lakshmi Mohan</h3>
+                <p>Business Communication</p>
+                <div class="mentor-bio">Lakshmi is a communication expert, helping students develop their professional communication skills.</div>
+            </div>
+            <div class="mentor-card">
+                
+                <h3>Mr. Vijay Shetty</h3>
+                <p>Time Management</p>
+                <div class="mentor-bio">Vijay offers practical strategies for effective time management and productivity enhancement.</div>
+            </div>
+            <div class="mentor-card">
+                
+                <h3>Ms. Ananya Rao</h3>
+                <p>Public Speaking Mastery</p>
+                <div class="mentor-bio">Ananya is a public speaking coach, empowering students to become confident speakers.</div>
+            </div>
+            <div class="mentor-card">
+                <h3>Mr. Naren Kalyan</h3>
+                <p>Financial Literacy</p>
+                <div class="mentor-bio">Naren is a finance expert who educates students on personal finance management and investment strategies.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About EDUDAXX</h4>
+                <p>EDUDAXX offers a comprehensive e-learning platform for individuals to gain new skills in both technical and non-technical fields, anytime, anywhere.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Email: support@edudaxx.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: LPU, Punjab, India</p>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><img src="fb logo 3.png" alt="Facebook"></a>
+                    <a href="#"><img src="x logo.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="ig logo 2.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin logo.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EDUDAXX. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
